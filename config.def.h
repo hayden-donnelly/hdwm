@@ -19,7 +19,8 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"kitty", NULL,
+	"sh", "-c", "~/repos/dotfiles/st_test.sh", NULL,
+    //"kitty", NULL,
     "sh", "-c", "~/repos/dotfiles/status.sh", NULL,
     "sh", "-c", "~/repos/dotfiles/wallpaper.sh", NULL,
 	NULL /* terminate */
