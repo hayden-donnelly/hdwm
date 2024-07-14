@@ -21,7 +21,8 @@ static const char *colors[][3]      = {
 static const char *const autostart[] = {
     "kitty", NULL,
     "feh", "--bg-fill", "/home/hayden/media/images/wallpapers/halo2.png", NULL,
-	NULL /* terminate */
+	"stathack", NULL,
+    NULL /* terminate */
 };
 
 /* tagging */
