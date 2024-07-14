@@ -19,9 +19,8 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"bash", "-c", "bash", "/home/hayden/repos/dotfiles/status.sh", NULL,
     "kitty", NULL,
-    "feh", "--bg-fill", "~/media/images/wallpapers/halo2.png", NULL,
+    "feh", "--bg-fill", "/home/hayden/media/images/wallpapers/halo2.png", NULL,
 	NULL /* terminate */
 };
 
