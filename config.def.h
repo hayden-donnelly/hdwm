@@ -19,9 +19,9 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    "kitty", NULL,
-    "feh", "--bg-fill", "/home/hayden/.wallpaper.png", NULL,
-    NULL /* terminate */
+	"kitty", NULL,
+	"feh", "--bg-fill", "/home/hayden/.wallpaper.png", NULL,
+	NULL /* terminate */
 };
 
 /* tagging */
@@ -85,6 +85,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
