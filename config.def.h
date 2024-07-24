@@ -72,8 +72,10 @@ static const char *voldown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", 
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ 0,              XF86XK_AudioRaiseVolume, spawn,          {.v = volup} },
-	{ 0,              XF86XK_AudioLowerVolume, spawn,          {.v = voldown} },
+	{ 0,                            XK_F3,     spawn,          {.v = volup} },
+	{ MODKEY,                       XK_F3,     spawn,          {.v = volup} },
+	{ 0,                            XK_F2,     spawn,          {.v = voldown} },
+	{ MODKEY,                       XK_F2,     spawn,          {.v = voldown} },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
