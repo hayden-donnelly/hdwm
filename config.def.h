@@ -69,9 +69,11 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *volup[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL};
 static const char *voldown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL};
+static const char *flameshotgui[] = { "flameshot", "gui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,                       XK_Print,  spawn,          {.v = flameshotgui} },
 	{ 0,                            XK_F3,     spawn,          {.v = volup} },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volup} },
 	{ 0,                            XK_F2,     spawn,          {.v = voldown} },
