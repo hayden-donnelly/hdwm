@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#include <X11/XF86keysym.h>
+#define MY_HOME_PATH(path) "/home/hayden/"path
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 
 static const char *const autostart[] = {
 	"kitty", NULL,
-	"feh", "--bg-fill", "/home/hayden/.wallpaper.png", NULL,
+	"feh", "--bg-fill", MY_HOME_PATH(".wallpaper.png"), NULL,
 	NULL /* terminate */
 };
 
