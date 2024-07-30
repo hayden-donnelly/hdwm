@@ -1,3 +1,23 @@
+# Hayden's DWM (HDWM)
+
+This is a version of DWM made to work with my [NixOS configuration](https://github.com/hayden-donnelly/dotfiles). You can probably use it for your own system (if you want), but keep in mind that you'll have to install the runtime programs for everything to work correctly. You'll also have to change the `MY_HOME_PATH` macro in `config.def.h` to your own username (i.e. `#define MY_HOME_PATH(path) "/home/<your-username>/"path`). This is used for accessing the user's home directory from autostart since relative paths don't work.
+
+## Build Dependencies
+- Xlib header files
+
+## Runtime Programs
+HDWM assumes that these programs are installed and makes use of them at runtime.
+- Flameshot
+- Kitty
+- Dmenu
+- Feh
+
+## Wallpaper
+To set the wallpaper, place the wallpaper image you want in your user's home directory, rename it to `.wallpaper.png`, then restart DWM.
+
+## Original Readme
+This is the original readme text for DWM.
+```
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
@@ -46,3 +66,4 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+```
